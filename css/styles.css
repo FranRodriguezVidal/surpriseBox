@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('../img/fondoverde.avif') no-repeat center center fixed; /* Fondo centrado y fijado */
+    background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    max-width: 55%;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Efecto de movimiento suave */
+.shake {
+    animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, -5px); }
+    50% { transform: translate(-5px, 5px); }
+    75% { transform: translate(5px, 5px); }
+    100% { transform: translate(-5px, -5px); }
+}
+
+/* Estilo para los confetis */
+.confetti {
+    position: absolute;
+    width: 10px; /* Tamaño base */
+    height: 10px; /* Tamaño base */
+    border-radius: 50%; /* Forma inicial: círculo */
+    pointer-events: none; /* Para que no interfiera con los clics */
+}
